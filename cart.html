@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart – Glamora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="app">
+
+  <main class="page-padding">
+
+    <a href="index.html" class="back-link">← Back</a>
+
+    <h1>Your Cart</h1>
+
+    <!-- Cart Items Container -->
+    <div id="cart-items"></div>
+
+    <!-- Cart Total -->
+    <div id="cart-total" style="
+      margin-top:20px;
+      font-size:18px;
+      font-weight:600;
+    "></div>
+<div class="top-right-btn" onclick="window.location.href='cart.html'">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+  
+  </main>
+
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+
+      <a href="index.html" class="nav-item">
+        <span class="icon"><i class="fa-solid fa-house"></i></span>
+        <span>Home</span>
+      </a>
+
+      <a href="categories.html" class="nav-item">
+        <span class="icon"><i class="fa-solid fa-list"></i></span>
+        <span>Categories</span>
+      </a>
+
+      <div class="nav-center-wrapper">
+        <button class="nav-center-btn">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+
+      <a href="favorites.html" class="nav-item">
+        <span class="icon"><i class="fa-regular fa-heart"></i></span>
+        <span>Favorites</span>
+      </a>
+
+      <a href="profile.html" class="nav-item">
+        <span class="icon"><i class="fa-regular fa-user"></i></span>
+        <span>Account</span>
+      </a>
+
+    </div>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+  loadCartPage();
+</script>
+
+</body>
+</html>

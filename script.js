@@ -328,6 +328,103 @@ function loadProductPage() {
   document.getElementById("p-name").textContent = product.name;
   document.getElementById("p-brand").textContent = product.brand;
   document.getElementById("p-price").textContent = product.price;
+  document.getElementById("add-to-cart-btn").addEventListener("click", () => {
+    addToCart(product);
+    alert("Added to cart!");
+});
+
+function addToCart(product) {
+  let cart = getCart();
+
+  let existing = cart.find(item => item.id === product.id);
+
+  if (existing) {
+    existing.qty++;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      qty: 1
+    });
+  }
+
+  saveCart(cart);
+  alert("Added to cart!");
+}
+function loadCartPage() {
+  const container = document.getElementById("cart-items");
+  let cart = getCart();
+  let total = 0;
+
+  if (cart.length === 0) {
+    container.innerHTML = "<p>Your cart is empty.</p>";
+    document.getElementById("cart-total").textContent = "";
+    return;
+  }
+
+  container.innerHTML = cart.map(item => `
+    <div class="cart-item" style="
+      display:flex;
+      gap:15px;
+      margin-bottom:20px;
+      padding:10px;
+      border-radius:12px;
+      background:var(--card-bg);
+      box-shadow:var(--shadow-soft);
+    ">
+      <img src="${item.image}" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+
+      <div style="flex:1;">
+        <h3 style="margin:0;font-size:16px;">${item.name}</h3>
+        <p style="margin:4px 0;color:var(--text-soft);">${item.price}</p>
+
+        <div style="display:flex;align-items:center;gap:10px;margin-top:8px;">
+          <button onclick="changeQty(${item.id}, -1)">–</button>
+          <span>${item.qty}</span>
+          <button onclick="changeQty(${item.id}, 1)">+</button>
+        </div>
+
+        <button onclick="removeFromCart(${item.id})"
+                style="margin-top:10px;font-size:12px;color:red;">
+          Remove
+        </button>
+      </div>
+    </div>
+  `).join("");
+
+  // Calculate total
+  cart.forEach(item => {
+    let price = parseInt(item.price.replace(/[^0-9]/g, ""));
+    total += price * item.qty;
+  });
+
+  document.getElementById("cart-total").textContent =
+    "Total: " + total.toLocaleString() + " IQD";
+}
+function changeQty(id, amount) {
+  let cart = getCart();
+  let item = cart.find(i => i.id === id);
+
+  if (!item) return;
+
+  item.qty += amount;
+
+  if (item.qty <= 0) {
+    cart = cart.filter(i => i.id !== id);
+  }
+
+  saveCart(cart);
+  loadCartPage();
+}
+
+function removeFromCart(id) {
+  let cart = getCart().filter(item => item.id !== id);
+  saveCart(cart);
+  loadCartPage();
+}
+
 
   // FIX: Load image into the big frame
   const imgBox = document.querySelector(".product-page-img");
@@ -387,6 +484,13 @@ function loadBottomNav(active = "") {
   }
 }
 
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 // =====================================================
 //                    INIT ON PAGE LOAD

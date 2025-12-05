@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login – Glamora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="app">
+    <main class="page-padding">
+
+        <div class="top-right-btn" onclick="window.location.href='cart.html'">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      
+        <a href="index.html" class="back-link">← Back</a>
+        <h1>Login</h1>
+      
+
+    <div class="placeholder-block">
+      <div class="input-row">
+        <label>Email</label>
+        <input type="email" id="login-email" placeholder="Enter email">
+      </div>
+
+      <div class="input-row">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter password">
+      </div>
+
+      <button class="login-btn" id="login-btn">Login</button>
+
+      <p style="margin-top:10px;font-size:13px;">
+        Don’t have an account?
+        <a href="signup.html">Sign up</a>
+      </p>
+
+      <p id="login-error" style="color:#c8574d;font-size:13px;margin-top:8px;"></p>
+    </div>
+  </main>
+</div>
+
+<!-- Firebase + init -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+
+<script src="login.js"></script>
+</body>
+</html>

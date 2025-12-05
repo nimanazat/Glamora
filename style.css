@@ -640,7 +640,95 @@
     box-shadow: var(--shadow-soft);
 }
 
-  
+  /* AUTH PAGE STYLING (Glamora Design) */
+
+.form-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  margin-top: 20px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.input-row label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.input-row input {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  background: var(--card-bg);
+  font-size: 14px;
+  outline: none;
+  box-shadow: var(--shadow-soft);
+}
+
+.login-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  background: #2e2e2e;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.switch-text {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.switch-text a {
+  color: var(--text-main);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.error-text {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+.top-right-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 46px;
+  height: 46px;
+
+  background: #fff;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.top-right-btn i {
+  font-size: 20px;
+  color: black;
+}
+
   /* MEDIA */
   
   @media (min-width: 700px) {
