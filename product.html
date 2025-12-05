@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product – Glamora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <main class="page-padding">
+
+      <a href="javascript:history.back()" class="back-link">← Back</a>
+
+      <div class="product-page-img">Image</div>
+
+      <div class="product-page-brand" id="p-brand"></div>
+
+      <div class="product-page-name" id="p-name"></div>
+
+      <div class="product-page-price" id="p-price"></div>
+
+      <div class="product-page-actions">
+        <button class="btn-secondary">Add to Cart</button>
+        <button class="btn-primary">Buy Now</button>
+      </div>
+
+    </main>
+
+    <!-- Bottom nav -->
+    <nav class="bottom-nav">
+      <div class="bottom-nav-inner">
+        <a href="index.html" class="nav-item">
+          <span class="icon">🏠</span>
+          <span>Home</span>
+        </a>
+
+        <a href="categories.html" class="nav-item">
+          <span class="icon">≡</span>
+          <span>Categories</span>
+        </a>
+
+        <button class="nav-center-btn">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+        
+        <a href="favorites.html" class="nav-item">
+          <span class="icon">♡</span>
+          <span>Favorites</span>
+        </a>
+
+        <a href="profile.html" class="nav-item">
+          <span class="icon">👤</span>
+          <span>Account</span>
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", loadProductPage);
+  </script>
+
+</body>
+</html>
