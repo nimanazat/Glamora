@@ -45,7 +45,7 @@ const PRODUCTS = [
     brand: "SoftBody",
     price: "9,900 IQD",
     oldPrice: "11,500 IQD",
-    image: "glamora\perfume\chgessah.jpg",
+    image: "glamora/chgessah.jpg",
     category: "bodycare"
   },
   {
@@ -99,7 +99,7 @@ const PRODUCTS = [
     brand: "Glamora",
     price: "22,000 IQD",
     oldPrice: "27,000 IQD",
-    image: "assets/images/fragrance2.jpg",
+    image: "chamoni\chgessah.jpg",
     category: "fragrance"
   },
   {
