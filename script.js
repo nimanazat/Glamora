@@ -320,39 +320,48 @@ function loadProductPage() {
 
 function loadBottomNav(active = "") {
   const navHTML = `
-      <div class="bottom-nav-inner">
+    <div class="bottom-nav-inner">
 
-          <a href="index.html" class="nav-item ${active === "home" ? "active" : ""}">
-              <span class="icon"><i class="fa-solid fa-house"></i></span>
-              <span>Home</span>
-          </a>
+        <a href="index.html" class="nav-item ${active === "home" ? "active" : ""}">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span>Home</span>
+        </a>
 
-          <a href="categories.html" class="nav-item ${active === "categories" ? "active" : ""}">
-              <span class="icon"><i class="fa-solid fa-list"></i></span>
-              <span>Categories</span>
-          </a>
+        <a href="categories.html" class="nav-item ${active === "categories" ? "active" : ""}">
+          <span class="icon"><i class="fa-solid fa-list"></i></span>
+          <span>Categories</span>
+        </a>
 
-          <div class="nav-center-wrapper">
-              <button class="nav-center-btn">
-                  <i class="fa-solid fa-qrcode"></i>
-              </button>
-          </div>
+        <div class="nav-center-wrapper">
+            <button class="nav-center-btn" id="scanBtn">
+                <i class="fa-solid fa-qrcode"></i>
+            </button>
+        </div>
 
-          <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
-              <span class="icon"><i class="fa-regular fa-heart"></i></span>
-              <span>Favorites</span>
-          </a>
+        <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
+          <span class="icon"><i class="fa-regular fa-heart"></i></span>
+          <span>Favorites</span>
+        </a>
 
-          <a href="profile.html" class="nav-item ${active === "profile" ? "active" : ""}">
-              <span class="icon"><i class="fa-regular fa-user"></i></span>
-              <span>Account</span>
-          </a>
+        <a href="profile.html" class="nav-item ${active === "profile" ? "active" : ""}">
+          <span class="icon"><i class="fa-regular fa-user"></i></span>
+          <span>Account</span>
+        </a>
 
-      </div>
+    </div>
   `;
 
+  // Inject HTML
   const navContainer = document.querySelector(".bottom-nav");
   if (navContainer) navContainer.innerHTML = navHTML;
+
+  // Fix: Add click event AFTER HTML is created
+  const scanBtn = document.getElementById("scanBtn");
+  if (scanBtn) {
+    scanBtn.addEventListener("click", () => {
+      window.location.href = "scan.html";
+    });
+  }
 }
 
 
