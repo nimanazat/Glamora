@@ -45,7 +45,7 @@ const PRODUCTS = [
     brand: "SoftBody",
     price: "9,900 IQD",
     oldPrice: "11,500 IQD",
-    image: "assets/images/bodycare1.png",
+    image: "glamora\perfume\chgessah.jpg",
     category: "bodycare"
   },
   {
@@ -90,7 +90,7 @@ const PRODUCTS = [
     brand: "LittleCare",
     price: "6,000 IQD",
     oldPrice: "",
-    image: "assets/images/baby1.png",
+    image: "perfume\chamoni\chgessah.jpg",
     category: "babycare"
   },
   {
