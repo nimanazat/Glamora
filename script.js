@@ -129,6 +129,16 @@ const PRODUCTS = [
     image: "perfume/chamoni/lalona.jpg",
     category: "fragrance"
   }
+  ,
+  {
+    id: 15,
+    name: " LV OMBER 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/lvomber.jpg",
+    category: "fragrance"
+  }
   
 ];
 
