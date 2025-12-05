@@ -81,7 +81,7 @@ const PRODUCTS = [
     brand: "Glamora",
     price: "34,500 IQD",
     oldPrice: "40,000 IQD",
-    image: "assets/images/fragrance1.png",
+    image: "perfume\chamoni\chgris.jpg",
     category: "fragrance"
   },
   {
@@ -117,7 +117,7 @@ const PRODUCTS = [
     brand: "Elite Scents",
     price: "45,000 IQD",
     oldPrice: "50,000 IQD",
-    image: "assets/images/fragrance3.jpg",
+    image: "perfume\chamoni\chgessah.jpg.jpg",
     category: "fragrance"
   }
   
