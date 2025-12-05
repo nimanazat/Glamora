@@ -78,8 +78,8 @@ const PRODUCTS = [
   {
     id: 9,
     name: "Eau de Parfum 50 ml",
-    brand: "Glamora",
-    price: "34,500 IQD",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume\chamoni\chgris.jpg",
     category: "fragrance"
@@ -87,36 +87,36 @@ const PRODUCTS = [
   {
     id: 10,
     name: "Baby Shampoo 200 ml",
-    brand: "LittleCare",
-    price: "6,000 IQD",
-    oldPrice: "",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
     image: "perfume\chamoni\chgessah.jpg",
-    category: "babycare"
+    category: "fragrance"
   },
   {
     id: 11,
     name: "Glamora Mist 120ml",
-    brand: "Glamora",
-    price: "22,000 IQD",
-    oldPrice: "27,000 IQD",
-    image: "chamoni\chgessah.jpg",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "chamoni/chgessah.jpg",
     category: "fragrance"
   },
   {
     id: 12,
     name: "Royal Oud 50ml",
-    brand: "Elite Scents",
-    price: "45,000 IQD",
-    oldPrice: "50,000 IQD",
-    image: "assets/images/fragrance3.jpg",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/chgessah.jpg",
     category: "fragrance"
   },
   {
     id: 13,
     name: "Royal Oud 50ml",
-    brand: "Elite Scents",
-    price: "45,000 IQD",
-    oldPrice: "50,000 IQD",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
     image: "perfume\chamoni\chgessah.jpg.jpg",
     category: "fragrance"
   }
@@ -309,6 +309,10 @@ function loadProductPage() {
   document.getElementById("p-name").textContent = product.name;
   document.getElementById("p-brand").textContent = product.brand;
   document.getElementById("p-price").textContent = product.price;
+
+  // FIX: Load image into the big frame
+  const imgBox = document.querySelector(".product-page-img");
+  imgBox.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
 
   updateFavoriteIcons();
 }
