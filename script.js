@@ -77,34 +77,34 @@ const PRODUCTS = [
   },
   {
     id: 9,
-    name: "Eau de Parfum 50 ml",
+    name: "RED TOBACO 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume\chamoni\chgris.jpg",
+    image: "perfume/chamoni/chredtobaco.jpg",
     category: "fragrance"
   },
   {
     id: 10,
-    name: "Baby Shampoo 200 ml",
+    name: "OUD WOOD 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume\chamoni\chgessah.jpg",
+    image: "perfume/chamoni/choudwood.jpg",
     category: "fragrance"
   },
   {
     id: 11,
-    name: "Glamora Mist 120ml",
+    name: "GRIS 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "chamoni/chgessah.jpg",
+    image: "perfume/chamoni/chgris.jpg",
     category: "fragrance"
   },
   {
     id: 12,
-    name: "Royal Oud 50ml",
+    name: "GESSAH 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
@@ -113,11 +113,20 @@ const PRODUCTS = [
   },
   {
     id: 13,
-    name: "Royal Oud 50ml",
+    name: "BLACK ORCHID 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume\chamoni\chgessah.jpg.jpg",
+    image: "perfume/chamoni/chblackorchid.jpg",
+    category: "fragrance"
+  },
+  {
+    id: 14,
+    name: " LA LONA 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/lalona.jpg",
     category: "fragrance"
   }
   
