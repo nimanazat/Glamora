@@ -620,10 +620,10 @@
   }
   .footer {
     text-align: center;
-    padding: 12px 0;
-    font-size: 13px;
+    padding: 15px 0;
+    font-size: 12px;
     color: var(--text-soft);
-    margin-top: 30px;
+    margin-top: 50px;
     padding-bottom: 100px; /* keeps it above bottom nav */
   }
   
