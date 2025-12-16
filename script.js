@@ -61,10 +61,28 @@ const PRODUCTS = [
     id: 7,
     name: "Whitening Toothpaste 75 ml",
     brand: "SmilePro",
-    price: "5,800 IQD",
-    oldPrice: "",
-    image: "assets/images/oral1.png",
-    category: "oralcare"
+    price: "30,000 IQD",
+    oldPrice: "35,000 IQD",
+    image: "haircare/1.jpg",
+    category:"haircare"
+  },
+  {
+    id: 7,
+    name: "Whitening Toothpaste 75 ml",
+    brand: "SmilePro",
+    price: "30,000 IQD",
+    oldPrice: "35,000 IQD",
+    image: "haircare/2.jpg",
+    category:"haircare"
+  },
+  {
+    id: 7,
+    name: "Whitening Toothpaste 75 ml",
+    brand: "SmilePro",
+    price: "30,000 IQD",
+    oldPrice: "35,000 IQD",
+    image: "haircare/3.jpg",
+    category:"haircare"
   },
   {
     id: 8,
@@ -452,7 +470,6 @@ function loadBottomNav(active = "") {
           <span>Categories</span>
         </a>
 
-    
 
         <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
           <span class="icon"><i class="fa-regular fa-heart"></i></span>
