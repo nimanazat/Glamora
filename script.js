@@ -452,11 +452,7 @@ function loadBottomNav(active = "") {
           <span>Categories</span>
         </a>
 
-        <div class="nav-center-wrapper">
-            <button class="nav-center-btn" id="scanBtn">
-                <i class="fa-solid fa-qrcode"></i>
-            </button>
-        </div>
+    
 
         <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
           <span class="icon"><i class="fa-regular fa-heart"></i></span>
