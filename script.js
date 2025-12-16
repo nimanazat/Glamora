@@ -59,8 +59,8 @@ const PRODUCTS = [
   },
   {
     id: 7,
-    name: "Whitening Toothpaste 75 ml",
-    brand: "SmilePro",
+    name: "Loreal Elvital Hydra Hyaluronic Shampoo 1L",
+    brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
     image: "haircare/1.jpg",
@@ -68,8 +68,8 @@ const PRODUCTS = [
   },
   {
     id: 7,
-    name: "Whitening Toothpaste 75 ml",
-    brand: "SmilePro",
+    name: "Loreal Elvital Dream Length Shampoo 1L",
+    brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
     image: "haircare/2.jpg",
@@ -77,8 +77,8 @@ const PRODUCTS = [
   },
   {
     id: 7,
-    name: "Whitening Toothpaste 75 ml",
-    brand: "SmilePro",
+    name: "Loreal Elvital Color Glanz Shampoo 1L",
+    brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
     image: "haircare/3.jpg",
