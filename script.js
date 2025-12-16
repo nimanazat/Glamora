@@ -196,83 +196,74 @@ const PRODUCTS = [
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " GESSAH 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/gessah.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " G.INTENSE OUD 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/gIntenseOud.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " LV IMGNATNO 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/lvImgnarno.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " LV METAORI 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/lvMetaori.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " MALCAHT ROUG 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/malcahtRoug.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " NEAXOS 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/nexos1891.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " OUD ISPAHAN 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/oudIspahan.jpg",
     category: "perfume"
   } ,
   {
     id: 14,
-    name: "  110ml",
+    name: " TIRNO X23 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: "  110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "",
+    image: "perfume/chamoni/tirnox23.jpg",
     category: "perfume"
   }
   
