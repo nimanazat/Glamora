@@ -100,7 +100,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/chredtobaco.jpg",
-    category: "fragrance"
+    category: "perfume"
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/choudwood.jpg",
-    category: "fragrance"
+    category: "perfume"
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/chgris.jpg",
-    category: "fragrance"
+    category: "perfume"
   },
   {
     id: 12,
@@ -127,7 +127,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/chgessah.jpg",
-    category: "fragrance"
+    category: "perfume"
   },
   {
     id: 13,
@@ -136,7 +136,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/chblackorchid.jpg",
-    category: "fragrance"
+    category: "perfume"
   },
   {
     id: 14,
@@ -145,7 +145,7 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/lalona.jpg",
-    category: "fragrance"
+    category: "perfume"
   }
   ,
   {
@@ -155,7 +155,125 @@ const PRODUCTS = [
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
     image: "perfume/chamoni/lvomber.jpg",
-    category: "fragrance"
+    category: "perfume"
+  } ,
+  {
+    id: 16,
+    name: " BACARAT 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/Bacarat.jpg",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: " BLACK AFGANO 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/BlackAfgano.jpg",
+    category: "perfume"
+  }
+  ,
+  {
+    id: 14,
+    name: " LV NAUVAU 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/lvNauvau.jpg",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: " TOBACO VANIL 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "perfume/chamoni/tobacoVanil.jpg",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
+  } ,
+  {
+    id: 14,
+    name: "  110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "",
+    category: "perfume"
   }
   
 ];
