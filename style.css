@@ -710,10 +710,6 @@
   color: black;
 }
 
-.fix-image .product-img img {
-  object-fit: contain;   /* no crop */
-  background: #f4f1eb;
-}
 
 
   /* MEDIA */

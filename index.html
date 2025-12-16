@@ -70,18 +70,41 @@
       </button>
 
       <!-- Fragrance Section -->
+
+      
 <div class="section-title-row">
   <h2>Perfume</h2>
-  <span onclick="window.location.href='fragrance.html'">See all</span>
-</div>
 
-<div class="product-row" id="home-fragrance">
+
+  <span onclick="window.location.href='perfume.html'">See all</span>
+</div>
+<div class="product-row" id="home-perfume">
+
   <!-- JS Injects Cards -->
 </div>
 
 <button class="see-all-btn" onclick="window.location.href='perfume.html'">
   See All PERFUME
 </button>
+
+<!-- bodycare Section -->
+
+      
+<div class="section-title-row">
+  <h2>bodycare</h2>
+
+
+  <span onclick="window.location.href='bodycare.html'">See all</span>
+</div>
+<div class="product-row" id="home-bodycare">
+
+  <!-- JS Injects Cards -->
+</div>
+
+<button class="see-all-btn" onclick="window.location.href='bodycare.html'">
+  See All Body Care
+</button>
+
 
 
 
@@ -126,7 +149,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       renderProducts("#home-facecare", "facecare");
-      renderProducts("#home-fragrance", "fragrance");  
+      renderProducts("#home-perfume", "perfume");  
       renderProducts("#home-bodycare", "bodycare");  
       enableSearch("#home-search", "#home-facecare");
     });
