@@ -105,6 +105,23 @@
   See All Body Care
 </button>
 
+<!-- haircare Section -->
+
+      
+<div class="section-title-row">
+  <h2>haircare</h2>
+
+
+  <span onclick="window.location.href='haircare.html'">See all</span>
+</div>
+<div class="product-row" id="home-haircare">
+
+  <!-- JS Injects Cards -->
+</div>
+
+<button class="see-all-btn" onclick="window.location.href='haircare.html'">
+  See All Body Care
+</button>
 
 
 
@@ -149,7 +166,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       renderProducts("#home-facecare", "facecare");
-      renderProducts("#home-perfume", "perfume");  
+      renderProducts("#home-perfume", "perfume");
+      renderProducts("#home-haircare", "haircare");  
       renderProducts("#home-bodycare", "bodycare");  
       enableSearch("#home-search", "#home-facecare");
     });

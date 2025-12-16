@@ -41,11 +41,11 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: "Deep Moisture Body Lotion 250 ml",
-    brand: "SoftBody",
-    price: "9,900 IQD",
-    oldPrice: "11,500 IQD",
-    image: "glamora/chgessah.jpg",
+    name: "Seductive Noir Body Mist 250 ml",
+    brand: "Guess",
+    price: "25,000 IQD",
+    oldPrice: "30,000 IQD",
+    image: "bodycare/guess.jpg",
     category: "bodycare"
   },
   {
