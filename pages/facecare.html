@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Glamora – Favorites</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <base href="../">
+  <title>Face Care – Glamora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,26 +13,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="app">
 
-    <!-- Top bar -->
-    <div class="top-bar">
-      <div class="search-row">
-        <div class="search-bar">
-          <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-          <input type="text" placeholder="Search in favorites">
-        </div>
-        <button class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-      </div>
-    </div>
-
     <main class="page-padding">
-      <h1>Favorites</h1>
-      <div id="favorites-container"></div>
+      <a href="categories.html" class="back-link">← Back</a>
+
+      <h1>Face Care</h1>
+      <p class="category-detail-sub">Cleansers, serums, moisturizers & masks for glowing skin.</p>
+
+      <div class="category-grid" id="category-grid"></div>
     </main>
 
     <!-- Bottom nav -->
@@ -41,11 +35,11 @@
           <span class="icon"><i class="fa-solid fa-house"></i></span>
           <span>Home</span>
         </a>
-        <a href="categories.html" class="nav-item">
+        <a href="categories.html" class="nav-item active">
           <span class="icon"><i class="fa-solid fa-list"></i></span>
           <span>Categories</span>
         </a>
-        <a href="favorites.html" class="nav-item active">
+        <a href="favorites.html" class="nav-item">
           <span class="icon"><i class="fa-regular fa-heart"></i></span>
           <span>Favorites</span>
         </a>
@@ -59,11 +53,7 @@
   </div>
 
   <script src="js/script.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      renderFavorites("#favorites-container");
-    });
-  </script>
+  <script>renderProducts("#category-grid", "facecare");</script>
 
 </body>
 </html>

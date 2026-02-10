@@ -4,73 +4,62 @@
   <meta charset="UTF-8" />
   <title>Glamora – Account</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
   <!-- Firebase SDK (compat version) -->
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
-
-<!-- Your Firebase initialization -->
-<script src="firebase-init.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="js/firebase-init.js"></script>
 </head>
+
 <body>
   <div class="app">
 
+    <!-- Top bar -->
     <div class="top-bar">
       <div class="search-row">
         <div class="search-bar">
           <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-
           <input type="text" placeholder="Search">
         </div>
         <button class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
-
       </div>
     </div>
 
     <main class="page-padding">
       <h1>Account</h1>
-     
 
-      <div class="placeholder-block">
+      <div class="placeholder-block" id="auth-block">
         <h3 id="profile-email">Checking...</h3>
-      
+
         <div id="logged-out-options">
-          <button class="login-btn" onclick="window.location.href='login.html'">Sign In</button>
-          <p style="margin-top:10px;font-size:13px;">
-            Don't have an account? <a href="signup.html">Sign up</a>
+          <button class="login-btn" onclick="window.location.href='pages/login.html'">Sign In</button>
+          <p style="margin-top:10px; font-size:13px;">
+            Don't have an account? <a href="pages/signup.html">Sign up</a>
           </p>
         </div>
-      
+
         <button class="login-btn" id="logout-btn" style="display:none;">
           Logout
         </button>
       </div>
-      
-      
+
       <div class="placeholder-block">
         <h3>Welcome, Glamora</h3>
         <p>Your profile settings, addresses, and orders will appear here.</p>
-        <div class="footer">
-          Powered by: <strong>Sherwani Company</strong>
 
-        </div>
-
-        <div class="footer">
-          Instagram: <strong>glamora_Chain</strong>
-        </div>
-
-        <div class="footer">
-          Instagram: <strong>glamora_boutiqueee</strong>
-        </div>
-
-        <div class="footer">
-         Whats app: <strong>0750 035 9686</strong>
-        </div>
-        
+        <div class="footer">Powered by: <strong>Sherwani Company</strong></div>
+        <div class="footer">Instagram: <strong>glamora_Chain</strong></div>
+        <div class="footer">Instagram: <strong>glamora_boutiqueee</strong></div>
+        <div class="footer">WhatsApp: <strong>0750 035 9686</strong></div>
       </div>
 
     </main>
@@ -78,61 +67,49 @@
     <!-- Bottom nav -->
     <nav class="bottom-nav">
       <div class="bottom-nav-inner">
-
-        <a href="index.html" class="nav-item active">
+        <a href="index.html" class="nav-item">
           <span class="icon"><i class="fa-solid fa-house"></i></span>
           <span>Home</span>
         </a>
-
         <a href="categories.html" class="nav-item">
           <span class="icon"><i class="fa-solid fa-list"></i></span>
           <span>Categories</span>
         </a>
-
-     
-
         <a href="favorites.html" class="nav-item">
           <span class="icon"><i class="fa-regular fa-heart"></i></span>
           <span>Favorites</span>
         </a>
-
-        <a href="profile.html" class="nav-item">
+        <a href="profile.html" class="nav-item active">
           <span class="icon"><i class="fa-regular fa-user"></i></span>
           <span>Account</span>
         </a>
-
       </div>
     </nav>
 
   </div>
-  
-  
+
   <script>
     firebase.auth().onAuthStateChanged(user => {
-      const notLoggedIn = document.getElementById("not-logged-in");
-      const loggedIn = document.getElementById("logged-in");
-      const userEmail = document.getElementById("user-email");
-  
+      const profileEmail = document.getElementById("profile-email");
+      const loggedOutOptions = document.getElementById("logged-out-options");
+      const logoutBtn = document.getElementById("logout-btn");
+
       if (user) {
-        notLoggedIn.style.display = "none";
-        loggedIn.style.display = "block";
-        userEmail.textContent = "Signed in as: " + user.email;
+        profileEmail.textContent = "Signed in as: " + user.email;
+        loggedOutOptions.style.display = "none";
+        logoutBtn.style.display = "block";
       } else {
-        loggedIn.style.display = "none";
-        notLoggedIn.style.display = "block";
+        profileEmail.textContent = "Not signed in";
+        loggedOutOptions.style.display = "block";
+        logoutBtn.style.display = "none";
       }
     });
-  
+
     document.getElementById("logout-btn").addEventListener("click", async () => {
       await firebase.auth().signOut();
       window.location.reload();
     });
   </script>
-  
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
-
-<script src="firebase-init.js"></script>
 
 </body>
 </html>

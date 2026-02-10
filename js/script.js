@@ -9,7 +9,7 @@ const PRODUCTS = [
     brand: "The Ordinary",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "face care/ordinary.png",
+    image: "assets/facecare/ordinary.png",
     category: "facecare"
   },
   {
@@ -18,7 +18,7 @@ const PRODUCTS = [
     brand: "LA ROCHE-POSAY",
     price: "25,000 IQD",
     oldPrice: "30,000 IQD",
-    image: "face care/LaRoche.png",
+    image: "assets/facecare/LaRoche.png",
     category: "facecare"
   },
   {
@@ -45,7 +45,7 @@ const PRODUCTS = [
     brand: "Guess",
     price: "25,000 IQD",
     oldPrice: "30,000 IQD",
-    image: "bodycare/guess.jpg",
+    image: "assets/bodycare/guess.jpg",
     category: "bodycare"
   },
   {
@@ -63,29 +63,29 @@ const PRODUCTS = [
     brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
-    image: "haircare/1.jpg",
-    category:"haircare"
+    image: "assets/haircare/1.jpg",
+    category: "haircare"
   },
   {
-    id: 7,
+    id: 8,
     name: "Loreal Elvital Dream Length Shampoo 1L",
     brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
-    image: "haircare/2.jpg",
-    category:"haircare"
+    image: "assets/haircare/2.jpg",
+    category: "haircare"
   },
   {
-    id: 7,
+    id: 9,
     name: "Loreal Elvital Color Glanz Shampoo 1L",
     brand: "Loreal",
     price: "30,000 IQD",
     oldPrice: "35,000 IQD",
-    image: "haircare/3.jpg",
-    category:"haircare"
+    image: "assets/haircare/3.jpg",
+    category: "haircare"
   },
   {
-    id: 8,
+    id: 10,
     name: "Refreshing Deodorant Spray",
     brand: "FreshMe",
     price: "7,200 IQD",
@@ -94,180 +94,279 @@ const PRODUCTS = [
     category: "personalcare"
   },
   {
-    id: 9,
+    id: 11,
     name: "RED TOBACO 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/chredtobaco.jpg",
-    category: "perfume"
-  },
-  {
-    id: 10,
-    name: "OUD WOOD 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/choudwood.jpg",
-    category: "perfume"
-  },
-  {
-    id: 11,
-    name: "GRIS 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/chgris.jpg",
+    image: "assets/perfume/chamoni/chredtobaco.jpg",
     category: "perfume"
   },
   {
     id: 12,
-    name: "GESSAH 110ml",
+    name: "OUD WOOD 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/chgessah.jpg",
+    image: "assets/perfume/chamoni/choudwood.jpg",
     category: "perfume"
   },
   {
     id: 13,
-    name: "BLACK ORCHID 110ml",
+    name: "GRIS 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/chblackorchid.jpg",
+    image: "assets/perfume/chamoni/chgris.jpg",
     category: "perfume"
   },
   {
     id: 14,
-    name: " LA LONA 110ml",
+    name: "GESSAH 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/lalona.jpg",
+    image: "assets/perfume/chamoni/chgessah.jpg",
     category: "perfume"
-  }
-  ,
+  },
   {
     id: 15,
-    name: " LV OMBER 110ml",
+    name: "BLACK ORCHID 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/lvomber.jpg",
+    image: "assets/perfume/chamoni/chblackorchid.jpg",
     category: "perfume"
-  } ,
+  },
   {
     id: 16,
-    name: " BACARAT 110ml",
+    name: "LA LONA 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/Bacarat.jpg",
+    image: "assets/perfume/chamoni/lalona.jpg",
     category: "perfume"
-  } ,
+  },
   {
-    id: 14,
-    name: " BLACK AFGANO 110ml",
+    id: 17,
+    name: "LV OMBER 110ml",
     brand: "CHAMONI PARIS",
     price: "35,000 IQD",
     oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/BlackAfgano.jpg",
+    image: "assets/perfume/chamoni/lvomber.jpg",
+    category: "perfume"
+  },
+  {
+    id: 18,
+    name: "BACARAT 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/Bacarat.jpg",
+    category: "perfume"
+  },
+  {
+    id: 19,
+    name: "BLACK AFGANO 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/BlackAfgano.jpg",
+    category: "perfume"
+  },
+  {
+    id: 20,
+    name: "LV NAUVAU 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/lvNauvau.jpg",
+    category: "perfume"
+  },
+  {
+    id: 21,
+    name: "TOBACO VANIL 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/tobacoVanil.jpg",
+    category: "perfume"
+  },
+  {
+    id: 22,
+    name: "GESSAH 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/gessah.jpg",
+    category: "perfume"
+  },
+  {
+    id: 23,
+    name: "G.INTENSE OUD 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/gIntenseOud.jpg",
+    category: "perfume"
+  },
+  {
+    id: 24,
+    name: "LV IMGNATNO 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/lvImgnarno.jpg",
+    category: "perfume"
+  },
+  {
+    id: 25,
+    name: "LV METAORI 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/lvMetaori.jpg",
+    category: "perfume"
+  },
+  {
+    id: 26,
+    name: "MALCAHT ROUG 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/malcahtRoug.jpg",
+    category: "perfume"
+  },
+  {
+    id: 27,
+    name: "NEAXOS 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/nexos1891.jpg",
+    category: "perfume"
+  },
+  {
+    id: 28,
+    name: "OUD ISPAHAN 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/oudIspahan.jpg",
+    category: "perfume"
+  },
+  {
+    id: 29,
+    name: "TIRNO X23 110ml",
+    brand: "CHAMONI PARIS",
+    price: "35,000 IQD",
+    oldPrice: "40,000 IQD",
+    image: "assets/perfume/chamoni/tirnox23.jpg",
     category: "perfume"
   }
-  ,
-  {
-    id: 14,
-    name: " LV NAUVAU 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/lvNauvau.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " TOBACO VANIL 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/tobacoVanil.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " GESSAH 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/gessah.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " G.INTENSE OUD 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/gIntenseOud.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " LV IMGNATNO 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/lvImgnarno.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " LV METAORI 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/lvMetaori.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " MALCAHT ROUG 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/malcahtRoug.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " NEAXOS 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/nexos1891.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " OUD ISPAHAN 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/oudIspahan.jpg",
-    category: "perfume"
-  } ,
-  {
-    id: 14,
-    name: " TIRNO X23 110ml",
-    brand: "CHAMONI PARIS",
-    price: "35,000 IQD",
-    oldPrice: "40,000 IQD",
-    image: "perfume/chamoni/tirnox23.jpg",
-    category: "perfume"
-  }
-  
 ];
+
+
+// =====================================================
+//                    CART
+// =====================================================
+
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function addToCart(product) {
+  let cart = getCart();
+  let existing = cart.find(item => item.id === product.id);
+
+  if (existing) {
+    existing.qty++;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      qty: 1
+    });
+  }
+
+  saveCart(cart);
+}
+
+function changeQty(id, amount) {
+  let cart = getCart();
+  let item = cart.find(i => i.id === id);
+
+  if (!item) return;
+
+  item.qty += amount;
+  if (item.qty <= 0) {
+    cart = cart.filter(i => i.id !== id);
+  }
+
+  saveCart(cart);
+  loadCartPage();
+}
+
+function removeFromCart(id) {
+  let cart = getCart().filter(item => item.id !== id);
+  saveCart(cart);
+  loadCartPage();
+}
+
+function loadCartPage() {
+  const container = document.getElementById("cart-items");
+  if (!container) return;
+
+  let cart = getCart();
+  let total = 0;
+
+  if (cart.length === 0) {
+    container.innerHTML = "<p>Your cart is empty.</p>";
+    document.getElementById("cart-total").textContent = "";
+    return;
+  }
+
+  container.innerHTML = cart.map(item => `
+    <div class="cart-item" style="
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 12px;
+      background: var(--card-bg);
+      box-shadow: var(--shadow-soft);
+    ">
+      <img src="${item.image}" style="width:80px; height:80px; border-radius:12px; object-fit:cover;">
+      <div style="flex:1;">
+        <h3 style="margin:0; font-size:16px;">${item.name}</h3>
+        <p style="margin:4px 0; color:var(--text-soft);">${item.price}</p>
+        <div style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+          <button onclick="changeQty(${item.id}, -1)">–</button>
+          <span>${item.qty}</span>
+          <button onclick="changeQty(${item.id}, 1)">+</button>
+        </div>
+        <button onclick="removeFromCart(${item.id})"
+                style="margin-top:10px; font-size:12px; color:red;">
+          Remove
+        </button>
+      </div>
+    </div>
+  `).join("");
+
+  cart.forEach(item => {
+    let price = parseInt(item.price.replace(/[^0-9]/g, ""));
+    total += price * item.qty;
+  });
+
+  document.getElementById("cart-total").textContent =
+    "Total: " + total.toLocaleString() + " IQD";
+}
 
 
 // =====================================================
@@ -285,9 +384,9 @@ function saveFavorites(list) {
 function toggleFavorite(id) {
   let favs = getFavorites();
   if (favs.includes(id)) {
-      favs = favs.filter(x => x !== id);
+    favs = favs.filter(x => x !== id);
   } else {
-      favs.push(id);
+    favs.push(id);
   }
   saveFavorites(favs);
   updateFavoriteIcons();
@@ -299,10 +398,10 @@ function isFavorite(id) {
 
 function updateFavoriteIcons() {
   document.querySelectorAll("[data-favid]").forEach(el => {
-      const id = Number(el.dataset.favid);
-      el.innerHTML = isFavorite(id)
-        ? `<i class="fa-solid fa-heart"></i>`
-        : `<i class="fa-regular fa-heart"></i>`;
+    const id = Number(el.dataset.favid);
+    el.innerHTML = isFavorite(id)
+      ? '<i class="fa-solid fa-heart"></i>'
+      : '<i class="fa-regular fa-heart"></i>';
   });
 }
 
@@ -322,38 +421,34 @@ function renderProducts(containerSelector, category = null) {
     : PRODUCTS;
 
   list.forEach(product => {
-      const card = document.createElement("div");
-      card.className = "product-card";
-      card.innerHTML = `
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
       <div class="product-fav" data-favid="${product.id}">
-          <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-heart"></i>
       </div>
-  
       <div class="product-img">
-          <img src="${product.image}" alt="${product.name}">
+        <img src="${product.image}" alt="${product.name}">
       </div>
-  
       <div class="product-brand">${product.brand}</div>
       <div class="product-name">${product.name}</div>
       <div class="product-price-now">${product.price}</div>
       ${product.oldPrice ? `<div class="product-price-old">${product.oldPrice}</div>` : ""}
-  `;
-  
-    
+    `;
 
-      card.addEventListener("click", (e) => {
-          if (e.target.closest("[data-favid]")) return;
-          localStorage.setItem("productView", JSON.stringify(product));
-          window.location.href = "product.html";
-      });
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("[data-favid]")) return;
+      localStorage.setItem("productView", JSON.stringify(product));
+      window.location.href = "pages/product.html";
+    });
 
-      const favBtn = card.querySelector("[data-favid]");
-      favBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleFavorite(product.id);
-      });
+    const favBtn = card.querySelector("[data-favid]");
+    favBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleFavorite(product.id);
+    });
 
-      container.appendChild(card);
+    container.appendChild(card);
   });
 
   updateFavoriteIcons();
@@ -372,51 +467,49 @@ function renderFavorites(containerSelector) {
   container.innerHTML = "";
 
   if (!favIds.length) {
-      container.innerHTML = `
+    container.innerHTML = `
       <div class="placeholder-block">
-          <h3>No favorite products yet</h3>
-          <p>Tap the heart icon on a product to add it.</p>
-      </div>`;
-      return;
+        <h3>No favorite products yet</h3>
+        <p>Tap the heart icon on a product to add it.</p>
+      </div>
+    `;
+    return;
   }
 
   const grid = document.createElement("div");
   grid.className = "category-grid";
 
   PRODUCTS.filter(p => favIds.includes(p.id)).forEach(product => {
-      const card = document.createElement("div");
-      card.className = "product-card";
+    const card = document.createElement("div");
+    card.className = "product-card";
 
-      card.innerHTML = `
+    card.innerHTML = `
       <div class="product-fav" data-favid="${product.id}">
         <i class="fa-regular fa-heart"></i>
       </div>
-    
       <div class="product-img">
         <img src="${product.image}" alt="${product.name}">
       </div>
-    
       <div class="product-brand">${product.brand}</div>
       <div class="product-name">${product.name}</div>
       <div class="product-price-now">${product.price}</div>
       ${product.oldPrice ? `<div class="product-price-old">${product.oldPrice}</div>` : ""}
     `;
-    
 
-      card.addEventListener("click", (e) => {
-          if (e.target.closest("[data-favid]")) return;
-          localStorage.setItem("productView", JSON.stringify(product));
-          window.location.href = "product.html";
-      });
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("[data-favid]")) return;
+      localStorage.setItem("productView", JSON.stringify(product));
+      window.location.href = "pages/product.html";
+    });
 
-      const favBtn = card.querySelector("[data-favid]");
-      favBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleFavorite(product.id);
-          renderFavorites(containerSelector);
-      });
+    const favBtn = card.querySelector("[data-favid]");
+    favBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleFavorite(product.id);
+      renderFavorites(containerSelector);
+    });
 
-      grid.appendChild(card);
+    grid.appendChild(card);
   });
 
   container.appendChild(grid);
@@ -435,11 +528,11 @@ function enableSearch(inputSelector, listSelector) {
   if (!input || !container) return;
 
   input.addEventListener("input", () => {
-      const value = input.value.toLowerCase();
-      container.querySelectorAll(".product-card").forEach(card => {
-          const name = card.querySelector(".product-name").textContent.toLowerCase();
-          card.style.display = name.includes(value) ? "flex" : "none";
-      });
+    const value = input.value.toLowerCase();
+    container.querySelectorAll(".product-card").forEach(card => {
+      const name = card.querySelector(".product-name").textContent.toLowerCase();
+      card.style.display = name.includes(value) ? "flex" : "none";
+    });
   });
 }
 
@@ -455,107 +548,18 @@ function loadProductPage() {
   document.getElementById("p-name").textContent = product.name;
   document.getElementById("p-brand").textContent = product.brand;
   document.getElementById("p-price").textContent = product.price;
+
+  // Add to cart button
   document.getElementById("add-to-cart-btn").addEventListener("click", () => {
     addToCart(product);
     alert("Added to cart!");
-});
-
-function addToCart(product) {
-  let cart = getCart();
-
-  let existing = cart.find(item => item.id === product.id);
-
-  if (existing) {
-    existing.qty++;
-  } else {
-    cart.push({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: product.image,
-      qty: 1
-    });
-  }
-
-  saveCart(cart);
-  alert("Added to cart!");
-}
-function loadCartPage() {
-  const container = document.getElementById("cart-items");
-  let cart = getCart();
-  let total = 0;
-
-  if (cart.length === 0) {
-    container.innerHTML = "<p>Your cart is empty.</p>";
-    document.getElementById("cart-total").textContent = "";
-    return;
-  }
-
-  container.innerHTML = cart.map(item => `
-    <div class="cart-item" style="
-      display:flex;
-      gap:15px;
-      margin-bottom:20px;
-      padding:10px;
-      border-radius:12px;
-      background:var(--card-bg);
-      box-shadow:var(--shadow-soft);
-    ">
-      <img src="${item.image}" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
-
-      <div style="flex:1;">
-        <h3 style="margin:0;font-size:16px;">${item.name}</h3>
-        <p style="margin:4px 0;color:var(--text-soft);">${item.price}</p>
-
-        <div style="display:flex;align-items:center;gap:10px;margin-top:8px;">
-          <button onclick="changeQty(${item.id}, -1)">–</button>
-          <span>${item.qty}</span>
-          <button onclick="changeQty(${item.id}, 1)">+</button>
-        </div>
-
-        <button onclick="removeFromCart(${item.id})"
-                style="margin-top:10px;font-size:12px;color:red;">
-          Remove
-        </button>
-      </div>
-    </div>
-  `).join("");
-
-  // Calculate total
-  cart.forEach(item => {
-    let price = parseInt(item.price.replace(/[^0-9]/g, ""));
-    total += price * item.qty;
   });
 
-  document.getElementById("cart-total").textContent =
-    "Total: " + total.toLocaleString() + " IQD";
-}
-function changeQty(id, amount) {
-  let cart = getCart();
-  let item = cart.find(i => i.id === id);
-
-  if (!item) return;
-
-  item.qty += amount;
-
-  if (item.qty <= 0) {
-    cart = cart.filter(i => i.id !== id);
-  }
-
-  saveCart(cart);
-  loadCartPage();
-}
-
-function removeFromCart(id) {
-  let cart = getCart().filter(item => item.id !== id);
-  saveCart(cart);
-  loadCartPage();
-}
-
-
-  // FIX: Load image into the big frame
+  // Load image into the big frame
   const imgBox = document.querySelector(".product-page-img");
-  imgBox.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+  if (imgBox) {
+    imgBox.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+  }
 
   updateFavoriteIcons();
 }
@@ -568,51 +572,29 @@ function removeFromCart(id) {
 function loadBottomNav(active = "") {
   const navHTML = `
     <div class="bottom-nav-inner">
-
-        <a href="index.html" class="nav-item ${active === "home" ? "active" : ""}">
-          <span class="icon"><i class="fa-solid fa-house"></i></span>
-          <span>Home</span>
-        </a>
-
-        <a href="categories.html" class="nav-item ${active === "categories" ? "active" : ""}">
-          <span class="icon"><i class="fa-solid fa-list"></i></span>
-          <span>Categories</span>
-        </a>
-
-
-        <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
-          <span class="icon"><i class="fa-regular fa-heart"></i></span>
-          <span>Favorites</span>
-        </a>
-
-        <a href="profile.html" class="nav-item ${active === "profile" ? "active" : ""}">
-          <span class="icon"><i class="fa-regular fa-user"></i></span>
-          <span>Account</span>
-        </a>
-
+      <a href="index.html" class="nav-item ${active === "home" ? "active" : ""}">
+        <span class="icon"><i class="fa-solid fa-house"></i></span>
+        <span>Home</span>
+      </a>
+      <a href="categories.html" class="nav-item ${active === "categories" ? "active" : ""}">
+        <span class="icon"><i class="fa-solid fa-list"></i></span>
+        <span>Categories</span>
+      </a>
+      <a href="favorites.html" class="nav-item ${active === "favorites" ? "active" : ""}">
+        <span class="icon"><i class="fa-regular fa-heart"></i></span>
+        <span>Favorites</span>
+      </a>
+      <a href="profile.html" class="nav-item ${active === "profile" ? "active" : ""}">
+        <span class="icon"><i class="fa-regular fa-user"></i></span>
+        <span>Account</span>
+      </a>
     </div>
   `;
 
-  // Inject HTML
   const navContainer = document.querySelector(".bottom-nav");
   if (navContainer) navContainer.innerHTML = navHTML;
-
-  // Fix: Add click event AFTER HTML is created
-  const scanBtn = document.getElementById("scanBtn");
-  if (scanBtn) {
-    scanBtn.addEventListener("click", () => {
-      window.location.href = "scan.html";
-    });
-  }
 }
 
-function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
-
-function saveCart(cart) {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
 
 // =====================================================
 //                    INIT ON PAGE LOAD

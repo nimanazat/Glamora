@@ -2,40 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <base href="../">
   <title>Devices – Glamora</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
   <div class="app">
 
     <main class="page-padding">
-
       <a href="categories.html" class="back-link">← Back</a>
 
       <h1>Devices</h1>
       <p class="category-detail-sub">Electronic beauty devices & skincare tools.</p>
 
       <div class="category-grid" id="category-grid"></div>
-
     </main>
 
+    <!-- Bottom nav -->
     <nav class="bottom-nav">
       <div class="bottom-nav-inner">
-        <a href="index.html" class="nav-item"><span class="icon">🏠</span><span>Home</span></a>
-        <a href="categories.html" class="nav-item active"><span class="icon">≡</span><span>Categories</span></a>
-        <div class="nav-center-wrapper"><button class="nav-center-btn">⬛</button></div>
-        <a href="favorites.html" class="nav-item"><span class="icon">♡</span><span>Favorites</span></a>
-        <a href="profile.html" class="nav-item"><span class="icon">👤</span><span>Account</span></a>
+        <a href="index.html" class="nav-item">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span>Home</span>
+        </a>
+        <a href="categories.html" class="nav-item active">
+          <span class="icon"><i class="fa-solid fa-list"></i></span>
+          <span>Categories</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+          <span class="icon"><i class="fa-regular fa-heart"></i></span>
+          <span>Favorites</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+          <span class="icon"><i class="fa-regular fa-user"></i></span>
+          <span>Account</span>
+        </a>
       </div>
     </nav>
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   <script>renderProducts("#category-grid", "devices");</script>
 
 </body>

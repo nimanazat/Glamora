@@ -8,11 +8,11 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- PROFESSIONAL ICONS -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -27,7 +27,6 @@
           </span>
           <input id="home-search" type="text" placeholder="Search products" />
         </div>
-
         <button class="cart-btn" aria-label="Cart">
           <i class="fa-solid fa-bag-shopping"></i>
         </button>
@@ -39,17 +38,11 @@
       <!-- Hero -->
       <div class="hero-card">
         <div class="hero-img">
-          <img src="Logo\GlamoraGoldLogo.jpg" alt="Banner">
+          <img src="assets/logo/GlamoraGoldLogo.jpg" alt="Banner">
         </div>
-        
-
         <div>
           <div class="hero-title">Glamora Erbil</div>
-
-          <div class="hero-sub">
-           15% Disscount
-          </div>
-
+          <div class="hero-sub">15% Discount</div>
           <button class="hero-btn">Shop Now</button>
         </div>
       </div>
@@ -59,120 +52,77 @@
         <h2>Face Care Favourites</h2>
         <span>See all</span>
       </div>
-
-      <div class="product-row" id="home-facecare">
-        <!-- JS Injects Cards -->
-      </div>
-      
-      
-      <button class="see-all-btn" onclick="window.location.href='facecare.html'">
+      <div class="product-row" id="home-facecare"></div>
+      <button class="see-all-btn" onclick="window.location.href='pages/facecare.html'">
         See All Face Care
       </button>
 
-      <!-- Fragrance Section -->
+      <!-- Perfume Section -->
+      <div class="section-title-row">
+        <h2>Perfume</h2>
+        <span onclick="window.location.href='pages/perfume.html'">See all</span>
+      </div>
+      <div class="product-row" id="home-perfume"></div>
+      <button class="see-all-btn" onclick="window.location.href='pages/perfume.html'">
+        See All Perfume
+      </button>
 
-      
-<div class="section-title-row">
-  <h2>Perfume</h2>
+      <!-- Body Care Section -->
+      <div class="section-title-row">
+        <h2>Body Care</h2>
+        <span onclick="window.location.href='pages/bodycare.html'">See all</span>
+      </div>
+      <div class="product-row" id="home-bodycare"></div>
+      <button class="see-all-btn" onclick="window.location.href='pages/bodycare.html'">
+        See All Body Care
+      </button>
 
-
-  <span onclick="window.location.href='perfume.html'">See all</span>
-</div>
-<div class="product-row" id="home-perfume">
-
-  <!-- JS Injects Cards -->
-</div>
-
-<button class="see-all-btn" onclick="window.location.href='perfume.html'">
-  See All PERFUME
-</button>
-
-<!-- bodycare Section -->
-
-      
-<div class="section-title-row">
-  <h2>bodycare</h2>
-
-
-  <span onclick="window.location.href='bodycare.html'">See all</span>
-</div>
-<div class="product-row" id="home-bodycare">
-
-  <!-- JS Injects Cards -->
-</div>
-
-<button class="see-all-btn" onclick="window.location.href='bodycare.html'">
-  See All Body Care
-</button>
-
-<!-- haircare Section -->
-
-      
-<div class="section-title-row">
-  <h2>haircare</h2>
-
-
-  <span onclick="window.location.href='haircare.html'">See all</span>
-</div>
-<div class="product-row" id="home-haircare">
-
-  <!-- JS Injects Cards -->
-</div>
-
-<button class="see-all-btn" onclick="window.location.href='haircare.html'">
-  See All Body Care
-</button>
-
-
-
-
+      <!-- Hair Care Section -->
+      <div class="section-title-row">
+        <h2>Hair Care</h2>
+        <span onclick="window.location.href='pages/haircare.html'">See all</span>
+      </div>
+      <div class="product-row" id="home-haircare"></div>
+      <button class="see-all-btn" onclick="window.location.href='pages/haircare.html'">
+        See All Hair Care
+      </button>
 
     </main>
 
     <!-- Bottom Navigation -->
     <nav class="bottom-nav">
       <div class="bottom-nav-inner">
-
         <a href="index.html" class="nav-item active">
           <span class="icon"><i class="fa-solid fa-house"></i></span>
           <span>Home</span>
         </a>
-
         <a href="categories.html" class="nav-item">
           <span class="icon"><i class="fa-solid fa-list"></i></span>
           <span>Categories</span>
         </a>
-
-      
-
         <a href="favorites.html" class="nav-item">
           <span class="icon"><i class="fa-regular fa-heart"></i></span>
           <span>Favorites</span>
         </a>
-
         <a href="profile.html" class="nav-item">
           <span class="icon"><i class="fa-regular fa-user"></i></span>
           <span>Account</span>
         </a>
-
       </div>
     </nav>
 
   </div>
 
-  <!-- Script -->
-  <script src="script.js"></script>
-
+  <script src="js/script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       renderProducts("#home-facecare", "facecare");
       renderProducts("#home-perfume", "perfume");
-      renderProducts("#home-haircare", "haircare");  
-      renderProducts("#home-bodycare", "bodycare");  
+      renderProducts("#home-haircare", "haircare");
+      renderProducts("#home-bodycare", "bodycare");
       enableSearch("#home-search", "#home-facecare");
     });
   </script>
-  
 
 </body>
 </html>
